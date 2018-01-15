@@ -30,23 +30,24 @@
 
 #### RL and approximate value function
 * *temporal-difference* learning (Value funciton method)
-    $ V(s) \leftarrow V(s) + \alpha [V(s') - V(s)] $
 
-    - iteract with environment(opponent player)
+  ![](https://github.com/yanyangbaobeiIsEmma/CS-234-RL/blob/master/math/TD.gif)
+  
+    - iteract with environment (opponent player)
     - clear goal, require planning or foresight to take in account delayed effects of choices.
 
 ### History of RL
 There are two main threads.
 1. trail and error
-    - Edward Thorndike first expressed the essence of trial-and-error: Law of Effect (it describes the effect of reinforcing events n the tendency to select actions)
-      * selectional 
-      * associative: alternatives found by selection are associated with particular situations.
-    
-      a combination of *selecction* and *memory*
-
-    - Minsky's paper *Step Toward Aritifical Intelligence*(1961), discussed *credit-assignment problem*.
+ - Edward Thorndike first expressed the essence of trial-and-error: Law of Effect (it describes the effect of reinforcing events n the tendency to select actions)
+ 
+   A combination of *selecction* and *memory*
+   * selectional 
+   * associative: alternatives found by selection are associated with particular situations.
+ - Minsky's paper *Step Toward Aritifical Intelligence*(1961), discussed *credit-assignment problem*.
+ 
 2. Optimal control, using value functions and DP.
-    - from Richard Bellman (mid-1950s), use dynamic system's state and a value funtion, define a functional equation - Bellman equation. Bellman also introduced the discrete stochastic version of optimal control problem known as MDPs.
-    - Ron Howard(1960) devised policy iteration method for MDPs. DP suffers from *the curse of dimensionality*, meaning the computations grow exponentially with the number of states.
+ - from Richard Bellman (mid-1950s), use dynamic system's state and a value funtion, define a functional equation - Bellman equation. Bellman also introduced the discrete stochastic version of optimal control problem known as MDPs.
+ - Ron Howard(1960) devised policy iteration method for MDPs. DP suffers from *the curse of dimensionality*, meaning the computations grow exponentially with the number of states.
 3. Temporal-difference methods.
 
