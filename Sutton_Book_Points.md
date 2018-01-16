@@ -38,27 +38,22 @@
 
 ### History of RL
 There are two main threads.
-1. trail and error
- - Edward Thorndike first expressed the essence of trial-and-error: Law of Effect (it describes the effect of reinforcing events n the tendency to select actions)
- 
-   A combination of *selecction* and *memory*
-   * selectional 
-   * associative: alternatives found by selection are associated with particular situations.
-
- - Minsky's paper *Step Toward Aritifical Intelligence*(1961), discussed *credit-assignment problem*.
+1. trial and error
+      - Edward Thorndike first expressed the essence of trial-and-error: Law of Effect (it describes the effect of reinforcing events n the tendency to select actions)
+      A combination of *selecction* and *memory*
+         * selectional 
+         * associative: alternatives found by selection are associated with particular situations.
+      - Minsky's paper *Step Toward Aritifical Intelligence*(1961), discussed *credit-assignment problem*.
 
  
 2. Optimal control, using value functions and DP.
- - from Richard Bellman (mid-1950s), use dynamic system's state and a value funtion, define a functional equation - Bellman equation. Bellman also introduced the discrete stochastic version of optimal control problem known as MDPs.
- - Ron Howard(1960) devised policy iteration method for MDPs. DP suffers from *the curse of dimensionality*, meaning the computations grow exponentially with the number of states.
+      - from Richard Bellman (mid-1950s), use dynamic system's state and a value funtion, define a functional equation - Bellman equation. Bellman also introduced the discrete stochastic version of optimal control problem known as MDPs.
+       - Ron Howard(1960) devised policy iteration method for MDPs. DP suffers from *the curse of dimensionality*, meaning the computations grow exponentially with the number of states.
 
 3. Temporal-difference methods.
- - Klopf (1972) brought trial-and-error learning together with an important component of temporal-difference learning.
-
- - Sutton and Barto (1978) developed Klopf's ideas and developed a psychological model of classical condistions based on temporal-difference learning. A key step was taken by Sutton in 1988 by separating temporal-difference learning from control, treating it as a general prediction method. That paper introduced TD($\lambda$) algorithm.
-
- - Sutton and Barto finalized work on actor-critic architecture in 1981.
-
- - 1989 Chris Watkin developed Q-learning.
+      - Klopf (1972) brought trial-and-error learning together with an important component of temporal-difference learning.
+      - Sutton and Barto (1978) developed Klopf's ideas and developed a psychological model of classical condistions based on temporal-difference learning. A key step was taken by Sutton in 1988 by separating temporal-difference learning from control, treating it as a general prediction method. That paper introduced TD($\lambda$) algorithm.
+      - Sutton and Barto finalized work on actor-critic architecture in 1981.
+      - 1989 Chris Watkin developed Q-learning.
 
 
