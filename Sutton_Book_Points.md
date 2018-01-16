@@ -13,7 +13,7 @@
 * policy
 * reward function (immediate, intrinsic desirability)
 * value function (long-term desirability)
-    N.B. evolutionary methods are not necessarily to do value estimation, like genetic algorithms, genetic programming, simulated annealing.
+   - N.B. evolutionary methods are not necessarily to do value estimation, like genetic algorithms, genetic programming, simulated annealing.
 * model of environment 
     given a state and action, models are used to predict next state and reward. Models are used for *planning*.
 
