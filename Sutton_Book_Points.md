@@ -1,4 +1,4 @@
-# RL by Sutton
+# RL by Sutton & Barto
 
 ## 1. Introduction
   * Reinforcement learning is learning what to do---how to map situations to actions---so as to maximize a numerical reward signal.
@@ -56,4 +56,6 @@ There are two main threads.
       - Sutton and Barto finalized work on actor-critic architecture in 1981.
       - 1989 Chris Watkin developed Q-learning.
 
+
+## 2. Evaluative Feedback
 
