@@ -3,9 +3,9 @@
 ## 1. Introduction
   * Reinforcement learning is learning what to do---how to map situations to actions---so as to maximize a numerical reward signal.
   
-  * These two characteristics---trial-and-error search and delayed reward---are the two most important distinguishing features of reinforcement learning.
+  * These two characteristics，**trial-and-error search** and **delayed reward**--are the two most important distinguishing features of reinforcement learning.
   
-  * One of the challenges that arises in reinforcement learning and not in other kinds of learning is the tradeoff between exploration and exploitation.
+  * One of the challenges that arises in reinforcement learning and not in other kinds of learning is the **tradeoff between exploration and exploitation**.
 
 ### Elements of RL
 * state
