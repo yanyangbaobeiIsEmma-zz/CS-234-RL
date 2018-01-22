@@ -41,7 +41,7 @@
 There are two main threads.
 1. trial and error
       - Edward Thorndike first expressed the essence of trial-and-error: Law of Effect (it describes the effect of reinforcing events n the tendency to select actions)
-      A combination of *selecction* and *memory*
+      A combination of *selection* and *memory*
          * selectional 
          * associative: alternatives found by selection are associated with particular situations.
       - Minsky's paper *Step Toward Aritifical Intelligence*(1961), discussed *credit-assignment problem*.
@@ -50,6 +50,7 @@ There are two main threads.
 2. Optimal control, using value functions and DP.
       - from Richard Bellman (mid-1950s), use dynamic system's state and a value funtion, define a functional equation - Bellman equation. Bellman also introduced the discrete stochastic version of optimal control problem known as MDPs.
        - Ron Howard(1960) devised policy iteration method for MDPs. DP suffers from *the curse of dimensionality*, meaning the computations grow exponentially with the number of states.
+       - DP is widely considered the only feasible way to solve general stochastic optimal control problem, but it suffers from what Bellman called "the curse of dimensionality", meaning that its computational requirements grow exponentially with the number of state variables.
 
 3. Temporal-difference methods.
       - Klopf (1972) brought trial-and-error learning together with an important component of temporal-difference learning.
