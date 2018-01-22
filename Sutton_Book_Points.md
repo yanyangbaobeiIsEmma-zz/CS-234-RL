@@ -57,5 +57,5 @@ There are two main threads.
       - 1989 Chris Watkin developed Q-learning.
 
 
-## 2. Evaluative Feedback
+## 2. Tabular Solution Methods
 
