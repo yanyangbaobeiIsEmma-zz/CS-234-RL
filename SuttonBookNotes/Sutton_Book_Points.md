@@ -59,5 +59,59 @@ There are two main threads.
       - 1989 Chris Watkin developed Q-learning.
 
 
-## 2. Tabular Solution Methods
+## 2. Multi-armed Bandits
+### k-armed bandit problem
+You are faced repeatedly with a choice among k different options,
+or actions. After each choice you receive a numerical reward chosen from a stationary probability
+distribution that depends on the action you selected. Your objective is to maximize the expected total
+reward over some time period, for example, over 1000 action selections, or time steps.
+
+### Solutions:
+1. Action-value Methods:
+* greedy method: choose action which has highest estimated value in the history.
+* alternative: epsilon-greedy
+  - pros: allow epsilon chance to explore, si the probability of selecyiong the optinal action converges to greater than 1 - epsilon
+  - cons: not practical. Also worst actions also get explored equally with best actions.
+
+2. Use incremental update on estimation of value
+
+*NewEstimate <- OldEstimate + StepSize[Target - OldEstimate]*
+
+step-size as 1/n results in sample-average method, which guranteed to converge to the true action values of LLN. 
+
+A well-known result in stochastic approximation theory gives us the conditions required to assure convergence with probability 1:
+
+  ![](https://github.com/yanyangbaobeiIsEmma/CS-234-RL/blob/master/math/convergenceCondition.png)
+
+The first condition is required to guarantee that the steps are large enough to eventually overcome any initial conditions or random fluctuations. The second condition guarantees that eventually the steps become small enough to assure convergence.
+
+
+3. Optimistic Initial Values
+
+By setting inital values for actions, we encourage action-value methods to explore since these methods are biased by their initial estimates.
+
+  ![](https://github.com/yanyangbaobeiIsEmma/CS-234-RL/blob/master/math/optimisticInitialValues.png)
+
+Cons: Only help to explore for stationary problem, any method that focuses on the initial conditions in any special way is unlikely to help with the general nonstationary case.
+
+4. UCB Action Selection
+
+![](https://github.com/yanyangbaobeiIsEmma/CS-234-RL/blob/master/math/UCB.png)
+c controls the degree of exploration.
+
+The idea of this upper confidence bound (UCB) action selection is that the square-root term is a measure of the uncertainty or variance in the estimate of a’s value. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
