@@ -29,6 +29,7 @@
         estimate winning probability by playing some games against opponent.
 
 #### RL and approximate value function
+![](https://github.com/yanyangbaobeiIsEmma/CS-234-RL/blob/master/math/exploratoryMoves.png)
 * *temporal-difference* learning (Value funciton method)
 
   ![](https://github.com/yanyangbaobeiIsEmma/CS-234-RL/blob/master/math/TD.gif)
